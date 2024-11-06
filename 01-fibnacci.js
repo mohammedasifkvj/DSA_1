@@ -11,12 +11,12 @@ function recurFibnacci(n) {
     return recurFibnacci(n-1)+recurFibnacci(n-2)
 }
 //// // O(2^n)
-0,1,1,2,3,5,8,13,21,34,55
+//0,1,1,2,3,5,8,13,21,34,55
 console.log(recurFibnacci(2))
 console.log(recurFibnacci(3))
 console.log(recurFibnacci(5))
 
-0,1,1,2,3,5,8,13,21,34,55
+//0,1,1,2,3,5,8,13,21,34,55
 console.log(fibnacci(2))
 console.log(fibnacci(3))
 console.log(fibnacci(6))
@@ -31,7 +31,7 @@ function fib(n) {
 
     return Math.round((Math.pow(phi,n) - Math.pow(psi,n))/sqrt5)
 }
-0,1,1,2,3,5,8,13,21,34,55
+//0,1,1,2,3,5,8,13,21,34,55
 console.log(fib(2));
 console.log(fib(3));
 console.log(fib(4));
@@ -51,5 +51,5 @@ function fibn(n) {
     }
     return dp[n];
   }
-  0,1,1,2,3,5,8,13,21,34,55
+//0,1,1,2,3,5,8,13,21,34,55
  console.log(fibn(15));
