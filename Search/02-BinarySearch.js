@@ -5,7 +5,8 @@ function binarySearch(arr, target) {
     while(leftIndex <= rightIndex){
         let midIndex=Math.floor((leftIndex + rightIndex)/2)
         if(target=== arr[midIndex]){
-            return midIndex
+            console.log(`value find at index ${midIndex}`);
+            return midIndex;
         }
         if(target< arr[midIndex]){
             rightIndex=midIndex -1
@@ -13,8 +14,8 @@ function binarySearch(arr, target) {
             leftIndex=midIndex + 1
         }
     }
+    console.log(`value not found in Array`);
     return -1
 }
 
-
-console.log(binarySearch([1,5,6,7,9,11,13,15,18],88));
+console.log(binarySearch([1,5,6,7,9,11,13,15,18],18));

@@ -1,3 +1,4 @@
+// Method 1
 function fibnacci(n) {
     const fib=[0,1];
     for(let i=2;i<n ; i++){
@@ -6,9 +7,17 @@ function fibnacci(n) {
     return fib ;
 }
 ////// O(n)
+//0,1,1,2,3,5,8,13,21,34,55
+console.log(fibnacci(2)) // [0, 1 ]
+console.log(fibnacci(3)) // [0, 1, 1 ]
+console.log(fibnacci(6)) // [0, 1, 1, 2, 3, 5 ]
+console.log(fibnacci(7)) // [0, 1, 1, 2, 3, 5, 8]
+console.log(fibnacci(10)) //[0, 1, 1, 2,3, 5, 8 ,13,21,34]
+
+// Method 2- Using Recursion
 function recurFibnacci(n) {
-    if(n < 2) return n;
-    return recurFibnacci(n-1)+recurFibnacci(n-2)
+  if(n < 2) return n;
+  return recurFibnacci(n-1)+recurFibnacci(n-2)
 }
 //// // O(2^n)
 //0,1,1,2,3,5,8,13,21,34,55
@@ -16,12 +25,6 @@ console.log(recurFibnacci(2))
 console.log(recurFibnacci(3))
 console.log(recurFibnacci(5))
 
-//0,1,1,2,3,5,8,13,21,34,55
-console.log(fibnacci(2))
-console.log(fibnacci(3))
-console.log(fibnacci(6))
-console.log(fibnacci(7))
-console.log(fibnacci(10))
 
 // Method 3- Using Binets formula TC- O(1) (Not suitable for large numbers
 function fib(n) {
